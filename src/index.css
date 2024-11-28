@@ -1,0 +1,162 @@
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 4rem;
+  color: white;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+/* Modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it overlays everything else */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 44%);
+}
+.delete-button{
+  background-color: hsl(10, 90%, 50%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+.confirm-button {
+  background-color: hsl(120, 50%, 50%);
+  color: white;
+}
+.cancel-button {
+  background-color: hsl(0, 80%, 50%);
+  color: white;
+}
+.confirm-button:hover {
+  background-color: hsl(120, 50%, 40%);
+}
+.cancel-button:hover {
+  background-color: hsl(0, 80%, 40%);
+}
+.edit-button {
+  background-color: hsl(209, 100%, 66%);
+}
+.edit-button:hover {
+  background-color: hsl(209, 100%, 56%);
+}
+.move-button{
+  background-color: hsl(207, 90%, 64%);
+}
+.move-button:hover{
+  background-color: hsl(207, 90%, 54%);
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+}
+.move-button, .delete-button, .edit-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+.confirm-button, .cancel-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Style the to-do list container */
+.to-do-list {
+  padding: 20px;
+  position: relative; /* To position filter at the top-left */
+}
+
+/* Increase the size of the checkbox */
+input[type="checkbox"] {
+  transform: scale(1.5); /* Increases the size of the checkbox */
+  margin-right: 10px;
+}
+
+.all-button{
+  background-color: blue;
+  
+
+}
+
+.unfinished-button{
+  background-color: blue;
+}
+
+.finished-button{
+  background-color: blue;
+}
+
+.filter-button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: grey; /* Green background for the active filter */
+  color: white; /* White text color for the active filter */
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
+
+
